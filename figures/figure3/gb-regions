@@ -1,0 +1,36 @@
+chr6:82843288-84103775 overall
+chr6:82,964,426-83,127,823 section1
+chr6:83362856-83428054 section2
+chr6:83,846,607-83,885,243 section3
+
+
+g.top <- ggplot(x, aes(x = date, y = rain, ymin=0, ymax=rain)) +geom_line() + scale_y_continuous(limits=c(22,0),expand=c(0,0), trans="reverse")+
+  theme_classic() + 
+  theme(plot.margin = unit(c(5,5,-200,6),units="points"),
+        axis.title.y = element_text(vjust = 0.3))+
+  labs(y = "Rain (mm)")
+
+g.bottom <- ggplot(x, aes(x = date, y = flow)) +
+  geom_line() +
+  theme_classic() +
+  theme(plot.margin = unit(c(0,5,1,1),units="points")) +
+  labs(x = "Date", y = "River flow (m/s)")
+
+grid.arrange(g.top,g.bottom)
+
+
+ ggplot(x, aes(x = date, y = flow)) +
+  geom_line() +  #plot flow
+  geom_line(aes(y = rain2), colour = "blue", size =1.5) +  # plot rain2
+  ## specify our yaxis limits and remove any axis expansion
+  scale_y_continuous(expand = c(0,0), limits = c(50,200),trans="reverse") +  
+  labs(x = "Date", y = "River flow (m/s)") +
+  theme_classic() +
+  theme(plot.background = element_rect(fill = "transparent"),
+        plot.margin = unit(c(2,0,1,1),units="lines"))
+
+boneamrrow overlap region chr12:113,874,956-114,161,965 overall
+
+chr12:113900522-113936261 icmp
+chr12:114005906-114033397 overlap 
+chr12:114092046-114105791 gap
