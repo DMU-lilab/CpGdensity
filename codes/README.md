@@ -26,7 +26,7 @@ CG permutation根据测序数据产生随机的数据，用来作为数据分析
 
 该脚本使用plotly用来绘制CG density的hist2d图。
  
-### fig1cmd
+## fig1cmd
 
 该文件夹用来存放生成figure1的程序，figurePlot-hilert-distance.R生成hilbert图和distance的图，
 shift-distance中的代码为生成figures/figure1/shift-distance中各物种的CG距离的代码。
