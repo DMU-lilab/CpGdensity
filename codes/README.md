@@ -30,3 +30,34 @@ CG permutation根据测序数据产生随机的数据，用来作为数据分析
 
 该文件夹用来存放生成figure1的程序，figurePlot-hilert-distance.R生成hilbert图和distance的图，
 shift-distance中的代码为生成figures/figure1/shift-distance中各物种的CG距离的代码。
+
+## Fig3 cmd
+
+### Corplot.R
+
+该脚本是计算methylation 和 CpGdensity 的相关性，包括实验数据和随机数据。
+
+
+### FeatureBin.R
+
+该脚本是分bin 观察 methylation 和 CpGdensity 的关系，包括 gene，Line和LTR。
+
+## Fig4 cmd
+
+### Complement.R
+
+该脚本是绘制 methylation 和 CpGdensity 符合情况。
+
+## Promoter 和 Repeat cmd
+
+### mm9Promoter.R
+
+该脚本是为了绘制  promoter heatmap。
+
+### Icmp.R
+
+该脚本是统计 bonemarrow overlap or gap region 在 other tissues 是不是 overlap or gap， 同时绘制饼图。
+
+### OverlapwithRepeat.R
+
+该脚本是计算 bonemarrow overlap 在 Repeat 区域的分布情况，同时绘制饼图。 
